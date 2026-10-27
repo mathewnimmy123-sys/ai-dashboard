@@ -1,0 +1,22 @@
+{
+  "system_name": "AI Reliability Command Center",
+  "version": "1.0.0",
+  "target_slos": {
+    "reliability_score_target": 94,
+    "execution_plane": {
+      "api_target": "99.1%",
+      "agents_target": "98.4%",
+      "tools_target": "99.0%",
+      "llm_target": "98.2%"
+    },
+    "data_plane": {
+      "freshness_target": "98%",
+      "completeness_target": "97%",
+      "groundedness_target": "97%"
+    },
+    "chaos_events": {
+      "allowed_sev1": 0,
+      "auto_rollback_threshold": "100%"
+    }
+  }
+}
